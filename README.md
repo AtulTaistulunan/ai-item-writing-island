@@ -13,6 +13,10 @@
 
 另有策展導覽模式、滑過時的自然材質上色、角色互動等功能。
 
+**線上瀏覽：** https://atultaistulunan.github.io/ai-item-writing-island/
+
+推送到 `main` 後，GitHub Actions 會自動建置並更新網站（`.github/workflows/deploy.yml`）。
+
 ## 執行
 
 需要 Node.js 18 以上。
