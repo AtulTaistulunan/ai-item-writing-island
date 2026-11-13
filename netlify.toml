@@ -1,0 +1,8 @@
+# Netlify 建置設定：從 GitHub 匯入這個儲存庫時會自動套用，不用在網頁上另外填
+[build]
+  base = "island"            # 網站專案在 island/；建置時仍讀得到上一層的 data/
+  command = "npm run build"
+  publish = "dist"           # 相對於 base，也就是 island/dist
+
+[build.environment]
+  NODE_VERSION = "20"
