@@ -1,0 +1,3331 @@
+{
+  "meta": {
+    "title": "〈器物與生活〉AI 協作命題歷程",
+    "subject": "國小四年級上學期社會科 第2課〈器物與生活〉",
+    "questionCount": 25,
+    "roundCount": 7,
+    "sources": [
+      {
+        "id": "chat",
+        "file": "設計選擇題.pdf",
+        "what": "與 ChatGPT 的對話紀錄，共 23 頁、七輪"
+      },
+      {
+        "id": "analysis",
+        "file": "題目分析表.docx",
+        "what": "教師填寫的題目分析表（四項指標、修正後題目、修正原因）"
+      }
+    ],
+    "notes": [
+      "題號以初版題號（originalQuestionId）為主鍵；revisedQuestionId 是第六版題號，第七版沿用第六版題號。",
+      "qualityIndicators 是教師對「初版」的勾選；第六、七版沒有對應的勾選資料。",
+      "分析表的「人工修正後的題目」內容等於第六版：由教師提出修改要求、AI 改寫，再經教師檢查與選用。",
+      "第七版只有四題，是對話紀錄中最新的修訂稿，沒有資料顯示已正式採用。",
+      "第二至第五版的完整題文不在對話紀錄裡（介面只顯示修訂摘要）。",
+      "沒有施測數據。"
+    ]
+  },
+  "evidenceLevels": {
+    "teacher": "教師原話：對話紀錄中的教師回饋，或分析表的修正原因",
+    "ai": "AI 原文：題目、修訂說明（aiQuote、aiRationale）",
+    "derived": "整理時歸納：問題類型（issueType）、主題（topic）、題號對應的推定（inferred）"
+  },
+  "indicators": [
+    {
+      "key": "grammar",
+      "label": "題目語法"
+    },
+    {
+      "key": "distractor",
+      "label": "誘答性"
+    },
+    {
+      "key": "answerCorrect",
+      "label": "答案正確"
+    },
+    {
+      "key": "objective",
+      "label": "切合學習目標"
+    }
+  ],
+  "stats": {
+    "grammar": {
+      "label": "題目語法",
+      "pass": 24,
+      "fail": 1,
+      "failIds": [
+        17
+      ]
+    },
+    "distractor": {
+      "label": "誘答性",
+      "pass": 2,
+      "fail": 23,
+      "failIds": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "answerCorrect": {
+      "label": "答案正確",
+      "pass": 25,
+      "fail": 0,
+      "failIds": []
+    },
+    "objective": {
+      "label": "切合學習目標",
+      "pass": 21,
+      "fail": 4,
+      "failIds": [
+        2,
+        4,
+        18,
+        22
+      ]
+    }
+  },
+  "issueTypes": {
+    "leak": "字面洩題",
+    "tone": "選項語氣",
+    "weak": "誘答太弱",
+    "cue": "選項線索",
+    "cross": "跨題提示",
+    "double": "雙重答案",
+    "stem": "題幹暗示",
+    "dup": "考點重複",
+    "level": "認知層次偏低",
+    "grammar": "選項用語重複",
+    "balance": "答案分布"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "version": "初版",
+      "pages": [
+        1,
+        7
+      ],
+      "numbering": "original",
+      "numberingNote": "初版題號，即本資料的 originalQuestionId",
+      "fullText": "complete",
+      "teacherPrompt": "你是一位國小社會科老師，我需要你幫忙出25題關於四上器物與生活的選擇題題目，內容為我上傳的檔案。",
+      "aiQuote": "已依據你上傳的兩份教材，設計 25 題四選一選擇題，以課本第 42～51 頁的核心概念為主，涵蓋傳統器物、現代器物、環境保護與資料探究。",
+      "issues": [],
+      "questionCount": 0
+    },
+    {
+      "round": 2,
+      "version": "修訂第二版",
+      "pages": [
+        7,
+        9
+      ],
+      "numbering": "original",
+      "numberingNote": "教師針對初版回饋，題號即初版題號",
+      "fullText": "summary",
+      "teacherFeedback": "這份題目我看完了，答案都沒問題，不過有幾題的選項還可以再調整一下。\n首先，有些題目會不小心提示答案。像第8題問「背簍」，答案就出現「背回家」；第9題的「土灶」對應到「泥土」；第23題的「罩在桌上」也很容易聯想到「桌罩」。這幾題可以稍微換個問法，避免學生只靠字面就猜對。另外第6題也有類似的情況，錯誤選項都用「都是、所有、只能」，只有正確答案用「有些」，語氣上的差異太明顯了。\n再來是誘答選項的部分，有些答案太不合理，學生應該很容易排除。像第1、3、4、7題，可以把錯誤選項改成學生比較可能有的想法，例如魚筌留空隙是為了方便看魚、放石頭是為了吸引魚蝦躲藏等。第10、12、13、14題也有類似問題，像菜櫥可以冷藏食物、砧板可以當隔熱墊，或是用其他植物的葉子包粽子，這些應該會比原本的選項更有鑑別度。\n後面幾題也是。第16題只有正確答案出現塑膠，太容易猜；第17題選項不用每個都寫「因為」；第18題目前比較像在比數字大小，可以改成讓學生判讀數據代表的意思。第19、20題的錯誤選項也可以再貼近學生對塑膠垃圾的迷思，第21題則可以加入「每次都買新的塑膠保鮮盒」，測試學生是否理解重複使用的概念。\n另外，第15題的「一定」建議拿掉，第24題「不蒐集資料直接猜」也太明顯，可以換成看似有蒐集資料、但其實跟研究目的無關的做法。",
+      "aiQuote": "已依照你的意見修訂，保留原本25題的核心考點及答案位置。",
+      "issues": [
+        {
+          "type": "leak",
+          "label": "字面洩題",
+          "refs": [
+            {
+              "statedNo": 8,
+              "originalQuestionId": 8
+            },
+            {
+              "statedNo": 9,
+              "originalQuestionId": 9
+            },
+            {
+              "statedNo": 23,
+              "originalQuestionId": 23
+            }
+          ]
+        },
+        {
+          "type": "tone",
+          "label": "選項語氣",
+          "refs": [
+            {
+              "statedNo": 6,
+              "originalQuestionId": 6
+            },
+            {
+              "statedNo": 15,
+              "originalQuestionId": 15
+            }
+          ]
+        },
+        {
+          "type": "weak",
+          "label": "誘答太弱",
+          "refs": [
+            {
+              "statedNo": 1,
+              "originalQuestionId": 1
+            },
+            {
+              "statedNo": 3,
+              "originalQuestionId": 3
+            },
+            {
+              "statedNo": 4,
+              "originalQuestionId": 4
+            },
+            {
+              "statedNo": 7,
+              "originalQuestionId": 7
+            },
+            {
+              "statedNo": 10,
+              "originalQuestionId": 10
+            },
+            {
+              "statedNo": 12,
+              "originalQuestionId": 12
+            },
+            {
+              "statedNo": 13,
+              "originalQuestionId": 13
+            },
+            {
+              "statedNo": 14,
+              "originalQuestionId": 14
+            },
+            {
+              "statedNo": 19,
+              "originalQuestionId": 19
+            },
+            {
+              "statedNo": 20,
+              "originalQuestionId": 20
+            },
+            {
+              "statedNo": 21,
+              "originalQuestionId": 21
+            },
+            {
+              "statedNo": 24,
+              "originalQuestionId": 24
+            }
+          ]
+        },
+        {
+          "type": "cue",
+          "label": "選項線索",
+          "refs": [
+            {
+              "statedNo": 16,
+              "originalQuestionId": 16
+            }
+          ]
+        },
+        {
+          "type": "grammar",
+          "label": "選項用語重複",
+          "refs": [
+            {
+              "statedNo": 17,
+              "originalQuestionId": 17
+            }
+          ]
+        },
+        {
+          "type": "level",
+          "label": "認知層次偏低",
+          "refs": [
+            {
+              "statedNo": 18,
+              "originalQuestionId": 18
+            }
+          ]
+        }
+      ],
+      "questionCount": 20
+    },
+    {
+      "round": 3,
+      "version": "修訂第三版",
+      "pages": [
+        9,
+        10
+      ],
+      "numbering": "original",
+      "numberingNote": "教師針對第二版回饋；第二版保留原本的題序，題號仍等於初版題號",
+      "fullText": "summary",
+      "teacherFeedback": "這版比前一版好很多，不過還有幾題可以再調整一下。\n首先，第2題和第3題放在一起，學生可能會從第3題的「魚筌」猜到第2題的答案。第5題問搗小米使用什麼工具，第6題又直接出現「木杵」，也有互相提示的問題，建議把這幾題分開。\n第10題除了加木柴，其他選項跟控制火力比較沒關係，還是有點好猜。第16題的問法也不夠明確，因為C選項的木材、金屬、塑膠也是現在常見的材料，學生可能會覺得A、C都可以選，建議再把題目問清楚一點。\n另外，第19、20題的錯誤選項幾乎都在說塑膠不會造成影響，學生應該很容易排除。第24題也是，只有A選項真的跟研究傳統器物有關，其他選項明顯偏題，可以再調整一下。",
+      "aiQuote": "這次修訂將重點放在跨題提示、誘答選項的鑑別度，以及單一正確答案。",
+      "issues": [
+        {
+          "type": "cross",
+          "label": "跨題提示",
+          "refs": [
+            {
+              "statedNo": 2,
+              "originalQuestionId": 2
+            },
+            {
+              "statedNo": 3,
+              "originalQuestionId": 3
+            },
+            {
+              "statedNo": 5,
+              "originalQuestionId": 5
+            },
+            {
+              "statedNo": 6,
+              "originalQuestionId": 6
+            }
+          ]
+        },
+        {
+          "type": "weak",
+          "label": "誘答太弱",
+          "refs": [
+            {
+              "statedNo": 10,
+              "originalQuestionId": 10
+            },
+            {
+              "statedNo": 19,
+              "originalQuestionId": 19
+            },
+            {
+              "statedNo": 20,
+              "originalQuestionId": 20
+            },
+            {
+              "statedNo": 24,
+              "originalQuestionId": 24
+            }
+          ]
+        },
+        {
+          "type": "double",
+          "label": "雙重答案",
+          "refs": [
+            {
+              "statedNo": 16,
+              "originalQuestionId": 16
+            }
+          ]
+        }
+      ],
+      "questionCount": 9
+    },
+    {
+      "round": 4,
+      "version": "修訂第四版",
+      "pages": [
+        11,
+        12
+      ],
+      "numbering": "v3",
+      "numberingNote": "教師針對第三版回饋；第三版重排了前 8 題，PDF 只明寫「原第3題移至第7題」「原第6題移至第8題」，第 3、6 題對應初版第 7、4 題是從回饋內容（月桃葉、魚筌）推定的",
+      "fullText": "summary",
+      "teacherFeedback": "這版整體比前面好很多，不過還有幾個地方可以調整。\n第2、6、7題都跟魚筌有關，第3、14題也都提到月桃葉，建議把題目再打散，避免互相提示。\n第16題的C選項也是現代常見的材料，學生可能會覺得A、C都對，建議改一下問法。\n第19題題幹已經提到塑膠垃圾會長期留在環境中，等於暗示了正確答案。\n第20題其他選項都在講海龜外部受傷，只有A跟胃裡的塑膠有關，還是太好猜。\n第21、22題都在考重複使用，可以考慮換掉其中一題，避免重複。\n其他部分大致沒問題，主要再調整這幾題就好。",
+      "aiQuote": "為避免跨題提示，改採跨主題交錯排列，不再將同一類器物的題目集中在一起。",
+      "issues": [
+        {
+          "type": "cross",
+          "label": "跨題提示",
+          "refs": [
+            {
+              "statedNo": 2,
+              "originalQuestionId": 2
+            },
+            {
+              "statedNo": 6,
+              "originalQuestionId": 4,
+              "inferred": true
+            },
+            {
+              "statedNo": 7,
+              "originalQuestionId": 3
+            },
+            {
+              "statedNo": 3,
+              "originalQuestionId": 7,
+              "inferred": true
+            },
+            {
+              "statedNo": 14,
+              "originalQuestionId": 14
+            }
+          ]
+        },
+        {
+          "type": "double",
+          "label": "雙重答案",
+          "refs": [
+            {
+              "statedNo": 16,
+              "originalQuestionId": 16
+            }
+          ]
+        },
+        {
+          "type": "stem",
+          "label": "題幹暗示",
+          "refs": [
+            {
+              "statedNo": 19,
+              "originalQuestionId": 19
+            }
+          ]
+        },
+        {
+          "type": "weak",
+          "label": "誘答太弱",
+          "refs": [
+            {
+              "statedNo": 20,
+              "originalQuestionId": 20
+            }
+          ]
+        },
+        {
+          "type": "dup",
+          "label": "考點重複",
+          "refs": [
+            {
+              "statedNo": 21,
+              "originalQuestionId": 21
+            },
+            {
+              "statedNo": 22,
+              "originalQuestionId": 22
+            }
+          ]
+        }
+      ],
+      "questionCount": 10
+    },
+    {
+      "round": 5,
+      "version": "修訂第五版",
+      "pages": [
+        12,
+        14
+      ],
+      "numbering": "final",
+      "numberingNote": "教師針對第四版回饋；第四版起改為跨主題交錯排列，題號與第六版相同",
+      "fullText": "summary",
+      "teacherFeedback": "第2、15、25題雖然分開了，但都跟魚筌有關，學生還是可能從後面的題目猜到第2題的答案。\n第10題的B、C選項其實也可能影響火力，建議再把題目問清楚一點，避免有答案爭議。\n第18題的錯誤選項還是太容易排除，像把灰燼加入飲用水、製作木桶，學生應該一看就知道不對。\n第24題雖然有修改，但其他三個選項都沒有直接提到海洋生物，學生還是很容易選出A。\n另外，答案分布是A有5題、B有8題，雖然沒有明顯規律，但可以再平均一點。",
+      "aiQuote": "這次修訂採取「保留已確認題目、集中修改有問題的題目」的方式，不再大幅更動整份題庫。",
+      "issues": [
+        {
+          "type": "cross",
+          "label": "跨題提示",
+          "refs": [
+            {
+              "statedNo": 2,
+              "originalQuestionId": 2
+            },
+            {
+              "statedNo": 15,
+              "originalQuestionId": 4
+            },
+            {
+              "statedNo": 25,
+              "originalQuestionId": 3
+            }
+          ]
+        },
+        {
+          "type": "double",
+          "label": "雙重答案",
+          "refs": [
+            {
+              "statedNo": 10,
+              "originalQuestionId": 10
+            }
+          ]
+        },
+        {
+          "type": "weak",
+          "label": "誘答太弱",
+          "refs": [
+            {
+              "statedNo": 18,
+              "originalQuestionId": 11
+            },
+            {
+              "statedNo": 24,
+              "originalQuestionId": 20
+            }
+          ]
+        },
+        {
+          "type": "balance",
+          "label": "答案分布",
+          "refs": []
+        }
+      ],
+      "questionCount": 6
+    },
+    {
+      "round": 6,
+      "version": "修訂第六版",
+      "pages": [
+        14,
+        20
+      ],
+      "numbering": "final",
+      "numberingNote": "教師針對第五版回饋，題號與第六版相同",
+      "fullText": "complete",
+      "teacherFeedback": "第9題的錯誤選項都是容易燃燒的材料，學生應該很容易選出泥土和磚塊，可以再增加一點干擾性。\n第16題的錯誤選項還是偏明顯，尤其是塑膠容易自然分解，學生應該不難排除。\n第18題比之前好很多，不過B、C都把灰燼當成燃料，感覺還是可以再調整一下。\n第19題的D選項明顯比其他選項長，而且內容也比較完整，可能會讓學生猜到答案。\n第24題雖然四個選項都是合理的危害，但題幹的「誤食」和A選項的「吞下」太直接對應，難度還是偏低。",
+      "aiQuote": "我保留其他20題的內容與題序，只重新設計第9、16、18、19、24題。",
+      "issues": [
+        {
+          "type": "weak",
+          "label": "誘答太弱",
+          "refs": [
+            {
+              "statedNo": 9,
+              "originalQuestionId": 9
+            },
+            {
+              "statedNo": 16,
+              "originalQuestionId": 17
+            },
+            {
+              "statedNo": 18,
+              "originalQuestionId": 11
+            }
+          ]
+        },
+        {
+          "type": "cue",
+          "label": "選項線索",
+          "refs": [
+            {
+              "statedNo": 19,
+              "originalQuestionId": 19
+            }
+          ]
+        },
+        {
+          "type": "leak",
+          "label": "字面洩題",
+          "refs": [
+            {
+              "statedNo": 24,
+              "originalQuestionId": 20
+            }
+          ]
+        }
+      ],
+      "questionCount": 5
+    },
+    {
+      "round": 7,
+      "version": "第七版（四題修訂稿）",
+      "pages": [
+        20,
+        23
+      ],
+      "numbering": "final",
+      "numberingNote": "教師針對第六版回饋，題號即第六版題號",
+      "fullText": "partial",
+      "teacherFeedback": "第9題的「石板與磁磚」其實也可能用來建造爐灶，建議再確認選項會不會有爭議。\n第16題的A、D在生活中也成立，只用「課本特別強調」來區分答案，感覺比較像在考記憶，可以再調整問法。\n第18題的D剛好結合了A、B的做法，學生可能直接選最完整的那個，不一定是真的理解灰燼的用途。\n第24題雖然改成情境推理，但題幹已經說海龜體內有塑膠碎片，其他選項都偏向外部環境影響，還是容易猜到A。",
+      "aiQuote": "以下先提供四題的完整修訂版本，其他21題維持第六版不變。",
+      "issues": [
+        {
+          "type": "double",
+          "label": "雙重答案",
+          "refs": [
+            {
+              "statedNo": 9,
+              "originalQuestionId": 9
+            }
+          ]
+        },
+        {
+          "type": "level",
+          "label": "認知層次偏低",
+          "refs": [
+            {
+              "statedNo": 16,
+              "originalQuestionId": 17
+            }
+          ]
+        },
+        {
+          "type": "cue",
+          "label": "選項線索",
+          "refs": [
+            {
+              "statedNo": 18,
+              "originalQuestionId": 11
+            }
+          ]
+        },
+        {
+          "type": "stem",
+          "label": "題幹暗示",
+          "refs": [
+            {
+              "statedNo": 24,
+              "originalQuestionId": 20
+            }
+          ]
+        }
+      ],
+      "questionCount": 4
+    }
+  ],
+  "questions": [
+    {
+      "originalQuestionId": 1,
+      "revisedQuestionId": 1,
+      "topic": "就地取材",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 1,
+          "stem": "早期居民常利用住家附近的竹子、藤和木頭製作生活器物，這種做法稱為什麼？",
+          "options": [
+            "大量進口",
+            "就地取材",
+            "集中生產",
+            "任意丟棄"
+          ],
+          "answer": "B"
+        },
+        "v6": {
+          "no": 1,
+          "stem": "早期居民製作生活器物時，常先觀察住家附近有哪些可利用的材料，再用竹子、藤或木頭製作需要的物品。這種利用自然資源的方式稱為什麼？",
+          "options": [
+            "物盡其用",
+            "就地取材",
+            "重複使用",
+            "資源回收"
+          ],
+          "answer": "B"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "錯誤選項太好刪，改成物盡其用、重複使用這些容易搞混的詞。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 1,
+          "issueType": "weak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 1
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 15
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 1
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 2,
+      "revisedQuestionId": 2,
+      "topic": "魚筌用途",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 2,
+          "stem": "早期原住民族把竹子和藤編成漏斗形的器物，放入溪流中，主要是為了什麼？",
+          "options": [
+            "背負農作物",
+            "盛裝食物",
+            "捕捉魚蝦",
+            "遮蔽陽光"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 2,
+          "stem": "早期居民在田間工作時，會戴上一種用竹片、油紙或植物葉片等材料製成的器物。這種器物主要能幫助居民解決什麼問題？",
+          "options": [
+            "搬運採收的農作物",
+            "避免昆蟲接觸食物",
+            "減少日曬及雨水的影響",
+            "將收成的穀物分類保存"
+          ],
+          "answer": "C"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": false
+      },
+      "revisionReason": "魚筌題太多，會互相洩答案，這題改考斗笠。",
+      "teacherFeedback": [
+        {
+          "round": 3,
+          "statedNo": 2,
+          "issueType": "cross"
+        },
+        {
+          "round": 4,
+          "statedNo": 2,
+          "issueType": "cross"
+        },
+        {
+          "round": 5,
+          "statedNo": 2,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 1
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 15
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 2
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 3,
+      "revisedQuestionId": 25,
+      "topic": "魚筌空隙",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 3,
+          "stem": "原住民族製作魚筌時，會在側面留下空隙，這樣的設計主要有什麼好處？",
+          "options": [
+            "讓小魚可以游出來，繼續長大",
+            "讓魚筌在水中漂浮，不會沉下去",
+            "讓所有魚蝦都能輕易進出",
+            "讓魚筌在溪水中自動移動"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 25,
+          "stem": "原住民族製作魚筌時，會在側面留下空隙。根據課本的介紹，這樣的設計主要是為了什麼？",
+          "options": [
+            "方便捕魚的人從外面觀察魚的數量",
+            "讓小魚有機會游出來，繼續長大",
+            "讓更多大魚能從側面游進魚筌",
+            "方便捕魚的人從側面取出魚蝦"
+          ],
+          "answer": "B"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "錯誤選項太扯，改成學生可能真的會想到的答案。魚筌只留這一題。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 3,
+          "issueType": "weak"
+        },
+        {
+          "round": 3,
+          "statedNo": 3,
+          "issueType": "cross"
+        },
+        {
+          "round": 4,
+          "statedNo": 7,
+          "issueType": "cross"
+        },
+        {
+          "round": 5,
+          "statedNo": 25,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 1
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 19
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 3
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 4,
+      "revisedQuestionId": 15,
+      "topic": "固定魚筌",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 4,
+          "stem": "爺爺把魚筌放入溪流後，還在旁邊放上石頭固定。這樣做最主要的原因是什麼？",
+          "options": [
+            "讓溪水變得更清澈",
+            "讓魚筌變得更漂亮",
+            "讓魚筌的空隙完全封閉",
+            "避免魚筌被溪水沖走"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 15,
+          "stem": "早期漢人製作水桶時，會挑選較堅硬、耐用且不容易腐爛的木材。這樣的選材方式，最主要是考慮水桶的哪一項使用需求？",
+          "options": [
+            "能反覆盛裝與搬運水，桶身不容易損壞",
+            "讓木材吸收桶內多餘的水，避免水溢出",
+            "讓桶身保持透氣，使裝入的水可以慢慢流出",
+            "讓木桶更容易上色，方便辨認不同的用途"
+          ],
+          "answer": "A"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": false
+      },
+      "revisionReason": "選項太好刪，魚筌題又太多，改考木製水桶。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 4,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 6,
+          "issueType": "cross",
+          "inferred": true
+        },
+        {
+          "round": 5,
+          "statedNo": 15,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 2
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 4
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 5,
+      "revisedQuestionId": 5,
+      "topic": "木杵搗小米",
+      "latestVersion": "v6",
+      "changeType": "unchanged",
+      "versions": {
+        "v1": {
+          "no": 5,
+          "stem": "阿美在參觀傳統文化展覽時，看到有人將小米放入石臼中搗製。下列哪一種器物最適合用來進行這項工作？",
+          "options": [
+            "背簍",
+            "木杵",
+            "斗笠",
+            "菜櫥"
+          ],
+          "answer": "B"
+        },
+        "v6": {
+          "no": 5,
+          "stem": "阿美在參觀傳統文化展覽時，看到有人將小米放入石臼中搗製。下列哪一種器物最適合用來進行這項工作？",
+          "options": [
+            "背簍",
+            "木杵",
+            "斗笠",
+            "菜櫥"
+          ],
+          "answer": "B"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": true,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "題目沒問題，但後面有題目直接寫出木杵，所以把兩題分開。",
+      "teacherFeedback": [
+        {
+          "round": 3,
+          "statedNo": 5,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 2
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 15
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 5
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 6,
+      "revisedQuestionId": 20,
+      "topic": "杵音",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 6,
+          "stem": "邵族人會使用長短不同的木杵敲擊石板，發出有節奏的聲音。這件事可以讓我們了解什麼？",
+          "options": [
+            "傳統器物都是以金屬製作",
+            "所有傳統器物只能使用一次",
+            "有些生活器物也能用來演奏音樂",
+            "原住民族只能使用石頭製作樂器"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 20,
+          "stem": "邵族人在傳統活動中，會使用長短不同的木製器具敲擊石板，形成有節奏的聲音。這個例子最能說明傳統器物的哪一項特色？",
+          "options": [
+            "器物的用途與材料來源通常無關",
+            "器物的形狀比使用方式更重要",
+            "器物的用途可以延伸到文化活動",
+            "器物的功能會隨著使用者的年齡改變"
+          ],
+          "answer": "C"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "錯誤選項都用都是、只能這種字，太好猜，題目又寫出木杵會洩答案，所以拿掉名稱、改選項。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 6,
+          "issueType": "tone"
+        },
+        {
+          "round": 3,
+          "statedNo": 6,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 2
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 18
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 6
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 7,
+      "revisedQuestionId": 12,
+      "topic": "月桃葉",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 7,
+          "stem": "月桃葉是早期居民常使用的天然材料。下列哪一項特性，讓它適合用來包裹食物？",
+          "options": [
+            "葉片較大，而且堅韌",
+            "葉片乾脆，容易碎裂",
+            "葉片表面十分尖銳",
+            "葉片細小，無法彎折"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 12,
+          "stem": "月桃葉能用來包裹糯米等食材。就「包住食材、不容易散開」來說，下列哪一項特性最有幫助？",
+          "options": [
+            "葉片寬大，而且不容易破裂",
+            "葉片具有獨特的香氣",
+            "月桃是臺灣常見的植物",
+            "葉片晒乾後可以製作草席"
+          ],
+          "answer": "A"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "錯誤選項太扯，改成月桃葉真的有的特色，但只有一個能回答包住不散開。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 7,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 3,
+          "issueType": "cross",
+          "inferred": true
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 2
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 7
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 8,
+      "revisedQuestionId": 11,
+      "topic": "背簍",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 8,
+          "stem": "布農族人過去會使用藤條編織背簍。下列哪一種生活情境最適合使用背簍？",
+          "options": [
+            "將食物放在桌上避免昆蟲接觸",
+            "將稻米放入鍋中烹煮",
+            "將蔬菜放在板子上切碎",
+            "將採收的農作物背回家中"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 11,
+          "stem": "布農族人過去會使用藤條編織背簍。下列哪一種工作最適合使用這項器物協助？",
+          "options": [
+            "將晒乾的穀物磨成粉末",
+            "避免放在桌上的食物受到昆蟲接觸",
+            "將溪水儲存起來供家人飲用",
+            "搬運採收的農作物和工作用具"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "題目問背簍，答案寫背回家，看字就猜得到，所以換掉字詞。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 8,
+          "issueType": "leak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 2
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 8
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 9,
+      "revisedQuestionId": 9,
+      "topic": "土灶材料",
+      "latestVersion": "v7",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 9,
+          "stem": "早期漢人使用的土灶，通常會利用下列哪一種材料建造？",
+          "options": [
+            "塑膠或橡膠",
+            "竹子或藤條",
+            "泥土或磚塊",
+            "玻璃或鋁片"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 9,
+          "stem": "早期農村的廚房裡，居民會使用木柴生火的傳統烹煮設備。根據課本的介紹，這種灶具主要使用哪一組材料砌成？",
+          "options": [
+            "石板與磁磚",
+            "水泥與鋼筋",
+            "泥土與磚塊",
+            "鐵板與玻璃"
+          ],
+          "answer": "C"
+        },
+        "v7": {
+          "no": 9,
+          "label": "灶具材料的用途",
+          "stem": "阿嬤向小明介紹早期的傳統灶具，並拿出泥土、磚塊和木柴三種材料，請他分辨哪些材料主要用來砌成灶體，哪些用來生火。下列哪一項分類正確？",
+          "options": [
+            "灶體：泥土、木柴；燃料：磚塊",
+            "灶體：磚塊、木柴；燃料：泥土",
+            "灶體：泥土、磚塊；燃料：木柴",
+            "灶體：泥土；燃料：磚塊、木柴"
+          ],
+          "answer": "C",
+          "aiRationale": "不再要求學生從多組現實中可能用於建造爐灶的材料中，選出唯一一組。改為辨認同一情境中材料的不同作用，排除建材適用範圍造成的爭議。"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "土灶對到泥土，看字就能猜，改成其他建材。不過石板也可能拿來砌灶，還有一點爭議。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 9,
+          "issueType": "leak"
+        },
+        {
+          "round": 6,
+          "statedNo": 9,
+          "issueType": "weak"
+        },
+        {
+          "round": 7,
+          "statedNo": 9,
+          "issueType": "double"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 3
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 9
+        },
+        "v7": {
+          "file": "設計選擇題.pdf",
+          "page": 21
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match",
+        "v7": "unconfirmed-adoption"
+      }
+    },
+    {
+      "originalQuestionId": 10,
+      "revisedQuestionId": 10,
+      "topic": "控制火力",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 10,
+          "stem": "阿嬤使用傳統灶具煮食物時，發現火力太小，想讓火燒得更旺。她應該怎麼做？",
+          "options": [
+            "增加燃燒的木柴",
+            "減少燃燒的木柴",
+            "將木柴全部取出",
+            "等待木柴完全燒成灰燼"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 10,
+          "stem": "阿嬤正在教孫子使用傳統灶具。根據課本中阿嬤介紹的控制火力方法，下列哪一組「木柴數量的調整」與「火力變化」的配對正確？",
+          "options": [
+            "增加木柴，火力會變旺；減少木柴，火力會變小",
+            "增加木柴，火力會變小；減少木柴，火力會變旺",
+            "增加木柴，火力維持不變，只會讓燃燒時間縮短",
+            "減少木柴，火力維持不變，只會讓燃燒時間延長"
+          ],
+          "answer": "A"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "其他選項跟火力無關，太好猜，改成加減木柴和火力的配對。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 10,
+          "issueType": "weak"
+        },
+        {
+          "round": 3,
+          "statedNo": 10,
+          "issueType": "weak"
+        },
+        {
+          "round": 5,
+          "statedNo": 10,
+          "issueType": "double"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 3
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 10
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 11,
+      "revisedQuestionId": 18,
+      "topic": "灰燼利用",
+      "latestVersion": "v7",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 11,
+          "stem": "早期居民使用木柴生火後，會將完全冷卻的灰燼留下來。這些灰燼可以如何利用？",
+          "options": [
+            "加入飲用水中",
+            "直接用來包裹食物",
+            "製作裝水的木桶",
+            "作為菜園的肥料"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 18,
+          "stem": "阿嬤使用柴火煮完食物後，發現灶裡還留有帶著餘溫的灰燼。如果想實踐課本中「物盡其用」的智慧，下列哪一種處理方式最能完整利用灰燼？",
+          "options": [
+            "等灰燼冷卻後拿到菜園使用，剩下的直接丟棄",
+            "先利用灰燼的餘溫悶熟地瓜，冷卻後再清理丟棄",
+            "挑出尚未燒完的木柴，留到下次煮飯時繼續使用",
+            "先利用灰燼的餘溫悶熟地瓜，冷卻後再用來施肥"
+          ],
+          "answer": "D"
+        },
+        "v7": {
+          "no": 18,
+          "label": "傳統灶具的灰燼利用",
+          "stem": "阿嬤用土灶蒸完粿後，發現灶裡的灰燼還有餘溫。她想趁現在再做一道點心，而且不另外生火。下列哪一種做法最適合？",
+          "options": [
+            "留下未燒盡的木炭，供下次烹煮再用",
+            "先讓灰燼完全冷卻，作為菜園肥料",
+            "重新添加木柴生火，再將地瓜烤熟",
+            "把地瓜放入溫熱灰燼，利用餘熱悶熟"
+          ],
+          "answer": "D",
+          "aiRationale": "A、B也是資源利用的做法，C也可以把食物烤熟，但只有D同時符合「現在利用餘熱」和「不另外生火」的條件。答案不再是其他兩個選項的簡單組合。"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "選項太扯，改成用餘溫悶地瓜再拿去施肥。但 D 剛好是 A 加 B，還可以再改。",
+      "teacherFeedback": [
+        {
+          "round": 5,
+          "statedNo": 18,
+          "issueType": "weak"
+        },
+        {
+          "round": 6,
+          "statedNo": 18,
+          "issueType": "weak"
+        },
+        {
+          "round": 7,
+          "statedNo": 18,
+          "issueType": "cue"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 3
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 18
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 11
+        },
+        "v7": {
+          "file": "設計選擇題.pdf",
+          "page": 22
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match",
+        "v7": "unconfirmed-adoption"
+      }
+    },
+    {
+      "originalQuestionId": 12,
+      "revisedQuestionId": 3,
+      "topic": "菜櫥",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 12,
+          "stem": "在冰箱普及以前，漢人家庭常使用木製菜櫥。下列哪一項是菜櫥的重要用途？",
+          "options": [
+            "將生米磨成米漿",
+            "放置食物，減少昆蟲接觸",
+            "利用火焰煮熟食物",
+            "將農作物從田裡搬回家"
+          ],
+          "answer": "B"
+        },
+        "v6": {
+          "no": 3,
+          "stem": "在冰箱普及以前，漢人家庭常使用木製菜櫥。下列哪一項是菜櫥最主要的用途？",
+          "options": [
+            "利用櫥內的低溫冷藏食物",
+            "放置食物，減少昆蟲及動物接觸",
+            "利用密閉空間讓食物更快發酵",
+            "利用櫥內的通風設計將食物晒乾"
+          ],
+          "answer": "B"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "選項太好刪，改成冷藏、晒乾這些學生可能會誤會的用途。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 12,
+          "issueType": "weak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 3
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 15
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 12
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 13,
+      "revisedQuestionId": 13,
+      "topic": "砧板",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 13,
+          "stem": "阿公要準備晚餐，拿出一塊傳統木製砧板。下列哪一項是砧板最主要的用途？",
+          "options": [
+            "配合刀具切菜、切肉",
+            "儲存食物並保持低溫",
+            "裝水並搬運到廚房",
+            "遮蓋桌上的食物"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 13,
+          "stem": "阿公準備晚餐時，拿出一塊傳統木製砧板。下列哪一項是這種器物最主要的用途？",
+          "options": [
+            "作為放置熱鍋的隔熱墊",
+            "作為盛放飯菜的餐盤",
+            "作為切菜、切肉時使用的墊板",
+            "作為食材清洗後瀝乾水分的工具"
+          ],
+          "answer": "C"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "選項太好刪，加入隔熱墊這種其他用途，看學生知不知道主要用途。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 13,
+          "issueType": "weak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 3
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 13
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 14,
+      "revisedQuestionId": 23,
+      "topic": "包粽葉片",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 14,
+          "stem": "端午節時，奶奶準備將糯米與餡料包起來製作粽子。下列哪一種天然材料適合用來包裹？",
+          "options": [
+            "藤條",
+            "木片",
+            "竹葉",
+            "泥土"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 23,
+          "stem": "小安發現，原住民族會使用月桃葉包裹食物，漢人也會使用竹葉等植物葉片包粽子。從這兩種生活方式可以發現什麼？",
+          "options": [
+            "不同族群使用的植物葉片通常沒有差異",
+            "植物葉片主要用來增加食物的重量",
+            "使用植物葉片包裹食物主要是為了延長食物的保存期限",
+            "不同族群都會運用自然材料滿足生活需求"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "其他葉子其實也能包粽子，會有兩個答案，改成比較不同族群怎麼用葉子。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 14,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 14,
+          "issueType": "cross"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 4
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 19
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 14
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 15,
+      "revisedQuestionId": 6,
+      "topic": "瓠瓢與水勺",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 15,
+          "stem": "早期居民使用瓠瓢舀水，現代人則常使用塑膠水勺。這種改變最能說明什麼？",
+          "options": [
+            "現代器物一定比傳統器物環保",
+            "傳統器物的用途已經完全消失",
+            "現代人已經不需要使用自然資源",
+            "生活器物的材質可能改變，但用途仍然相近"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 6,
+          "stem": "早期居民使用瓠瓢舀水，現代人則常使用塑膠水勺。這種改變最能說明什麼？",
+          "options": [
+            "改用塑膠製作後，器物對環境的影響就會減少",
+            "傳統器物已經失去原本的生活用途",
+            "器物的外形改變後，原本的功能也會跟著消失",
+            "器物的製作材料可能改變，但用途仍然相近"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "一定這個字太容易被刪掉，改成學生可能會誤會的想法。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 15,
+          "issueType": "tone"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 4
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 15
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 16,
+      "revisedQuestionId": 4,
+      "topic": "現代器物材質",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 16,
+          "stem": "隨著科技進步，許多不同材質的器物逐漸普遍運用在生活中。下列哪一組最符合現代常見的器物材質？",
+          "options": [
+            "玻璃、金屬、塑膠",
+            "樹皮、藤條、竹葉",
+            "泥土、竹子、樹葉",
+            "木柴、月桃葉、藤皮"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 4,
+          "stem": "小芸比較長輩早期使用的竹、木器物與現在常見的器物，想在報告中說明「製作材料的改變」。下列哪一項結論最符合課本內容？",
+          "options": [
+            "科技進步，使玻璃、金屬和塑膠等材質的器物更普遍地運用在生活中",
+            "傳統器物主要使用工廠生產的材料，現代器物則比較重視就地取材",
+            "現代器物使用其他材質，主要是因為竹木無法製作耐用的生活用品",
+            "生活器物的材料變化主要與外觀喜好有關，和科技發展的關係較小"
+          ],
+          "answer": "A"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "只有答案出現塑膠，一看就知道，改成問材料為什麼會改變。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 16,
+          "issueType": "cue"
+        },
+        {
+          "round": 3,
+          "statedNo": 16,
+          "issueType": "double"
+        },
+        {
+          "round": 4,
+          "statedNo": 16,
+          "issueType": "double"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 4
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 15
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 16
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 17,
+      "revisedQuestionId": 16,
+      "topic": "塑膠普及原因",
+      "latestVersion": "v7",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 17,
+          "stem": "為什麼現代人開始大量使用塑膠器物，取代部分傳統竹製、木製器物？",
+          "options": [
+            "因為塑膠都是天然植物製成的",
+            "因為塑膠器物完全不會產生垃圾",
+            "因為塑膠器物通常輕便又便宜",
+            "因為塑膠器物都能在短時間內自然分解"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 16,
+          "stem": "根據課本的介紹，塑膠器物逐漸取代部分傳統竹製、木製器物。下列哪一項是課本特別強調的主要原因？",
+          "options": [
+            "塑膠器物的顏色和造型可以有更多變化",
+            "塑膠器物的使用期限通常比木製器物長",
+            "塑膠器物通常重量輕巧，而且價格便宜",
+            "塑膠器物可以製成許多不同形狀的容器"
+          ],
+          "answer": "C"
+        },
+        "v7": {
+          "no": 16,
+          "label": "塑膠器物的普及原因",
+          "stem": "某間餐飲店需要採購大量外帶容器，除了希望節省購買成本，也希望員工搬運時不要太費力。下列哪一項塑膠容器的特性，最能符合店家的這兩項需求？",
+          "options": [
+            "顏色款式多，容易搭配不同餐點",
+            "造型變化多，適合盛裝各種食物",
+            "價格比較便宜，重量也比較輕",
+            "表面較為平滑，方便使用後清洗"
+          ],
+          "answer": "C",
+          "aiRationale": "四個選項都描述塑膠容器可能具有的特性，但題幹明確設定「成本」與「搬運」兩項需求。學生必須依據情境選出同時符合兩項條件的答案，不再只是背誦課文。"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": false,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "每個選項都寫因為，也太好刪，改成四個都說得通的特性，但比較像在考背課文。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 17,
+          "issueType": "grammar"
+        },
+        {
+          "round": 6,
+          "statedNo": 16,
+          "issueType": "weak"
+        },
+        {
+          "round": 7,
+          "statedNo": 16,
+          "issueType": "level"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 4
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 17
+        },
+        "v7": {
+          "file": "設計選擇題.pdf",
+          "page": 21
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "mismatch",
+        "v7": "unconfirmed-adoption"
+      }
+    },
+    {
+      "originalQuestionId": 18,
+      "revisedQuestionId": 17,
+      "topic": "淨灘統計",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 18,
+          "stem": "課本提供了民國112年臺灣淨灘行動的部分統計資料：\n根據上表，下列哪一項敘述正確？",
+          "options": [
+            "塑膠袋的數量比吸管多",
+            "寶特瓶的數量比塑膠瓶蓋多",
+            "四種海洋廢棄物的數量相同",
+            "吸管的數量比塑膠瓶蓋多"
+          ],
+          "answer": "B",
+          "table": {
+            "head": [
+              "海洋廢棄物",
+              "數量"
+            ],
+            "rows": [
+              [
+                "寶特瓶",
+                "67,076件"
+              ],
+              [
+                "塑膠瓶蓋",
+                "50,295件"
+              ],
+              [
+                "吸管",
+                "21,742件"
+              ],
+              [
+                "塑膠袋",
+                "15,974件"
+              ]
+            ]
+          }
+        },
+        "v6": {
+          "no": 17,
+          "stem": "課本提供了民國112年臺灣淨灘行動的部分統計資料：\n根據上表，下列哪一項是最合理的判斷？",
+          "options": [
+            "淨灘時最需要處理的是塑膠袋，其他物品影響較小",
+            "日常飲食與購物使用的塑膠用品，可能成為海洋廢棄物",
+            "塑膠瓶蓋的數量比寶特瓶少，因此不需要特別回收",
+            "寶特瓶的數量較多，表示它在海洋中比較容易自然分解"
+          ],
+          "answer": "B",
+          "table": {
+            "head": [
+              "海洋廢棄物",
+              "數量"
+            ],
+            "rows": [
+              [
+                "寶特瓶",
+                "67,076件"
+              ],
+              [
+                "塑膠瓶蓋",
+                "50,295件"
+              ],
+              [
+                "吸管",
+                "21,742件"
+              ],
+              [
+                "塑膠袋",
+                "15,974件"
+              ]
+            ]
+          }
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": false
+      },
+      "revisionReason": "原本只是比數字大小，改成判斷這些數字代表什麼。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 18,
+          "issueType": "level"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 4
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 18
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 19,
+      "revisedQuestionId": 19,
+      "topic": "塑膠不易分解",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 19,
+          "stem": "有人將用完的塑膠杯隨手丟進河川。為什麼這種行為可能長期造成環境負擔？",
+          "options": [
+            "塑膠杯遇水後會立即變成肥料",
+            "塑膠杯能讓河水變得更加乾淨",
+            "塑膠杯被水沖走後就會完全消失",
+            "塑膠杯不容易在自然環境中分解"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 19,
+          "stem": "學校準備推動自備飲水容器，減少一次性塑膠杯的使用。下列哪一項理由最符合課本強調的環境問題？",
+          "options": [
+            "塑膠杯占用垃圾空間，增加清運工作",
+            "塑膠杯常有飲料殘渣，增加清洗負擔",
+            "塑膠杯重量比較輕，容易隨風飄散",
+            "塑膠杯不易自然分解，容易持續累積"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "選項太扯，後來題目又暗示答案，最後拿掉提示，選項長度也改成差不多。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 19,
+          "issueType": "weak"
+        },
+        {
+          "round": 3,
+          "statedNo": 19,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 19,
+          "issueType": "stem"
+        },
+        {
+          "round": 6,
+          "statedNo": 19,
+          "issueType": "cue"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 5
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 18
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 19
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 20,
+      "revisedQuestionId": 24,
+      "topic": "塑膠與海洋生物",
+      "latestVersion": "v7",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 20,
+          "stem": "大量塑膠垃圾進入海洋後，可能對海洋生物造成什麼影響？",
+          "options": [
+            "海洋動物可能誤食塑膠垃圾",
+            "海洋動物能獲得更多安全的食物",
+            "海水會因塑膠垃圾而更加清澈",
+            "所有海洋生物都能生長得更快"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 24,
+          "stem": "海洋保育人員發現一隻海龜體重下降、進食量減少。經過檢查，發現牠的體內有許多塑膠碎片。根據這項發現，下列哪一項推論最有依據？",
+          "options": [
+            "塑膠碎片可能妨礙海龜正常進食，影響身體健康",
+            "塑膠垃圾可能纏住海龜的鰭，使牠難以游向食物",
+            "塑膠廢棄物可能遮住海面，使海龜不易尋找食物",
+            "塑膠垃圾可能堆積在海底，使海龜減少覓食機會"
+          ],
+          "answer": "A"
+        },
+        "v7": {
+          "no": 24,
+          "label": "海洋垃圾與生物健康",
+          "stem": "海洋保育人員發現，某海域有不少塑膠垃圾，有些海龜的進食量也變少。如果想了解這兩件事是否有關，下列哪一種調查最能提供直接的證據？",
+          "options": [
+            "檢查海龜消化道有無塑膠碎片，並記錄進食情形",
+            "統計海龜棲地的塑膠垃圾量，並記錄進食情形",
+            "觀察海龜附近的塑膠垃圾種類，並記錄進食情形",
+            "記錄海龜接觸塑膠垃圾的次數，並記錄進食情形"
+          ],
+          "answer": "A",
+          "aiRationale": "四個選項都與塑膠垃圾及海龜進食情況有關，也都是可以蒐集的資料。A能最直接檢查是否發生誤食；B、C、D則提供環境中塑膠垃圾或接觸情形的間接資料。須注意，即使檢查到塑膠碎片，也不能單憑這項結果就證實進食量減少必然由塑膠造成。"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "選項都在說塑膠沒影響，太好刪，改成海龜的推論題，但還是有點好猜。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 20,
+          "issueType": "weak"
+        },
+        {
+          "round": 3,
+          "statedNo": 20,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 20,
+          "issueType": "weak"
+        },
+        {
+          "round": 5,
+          "statedNo": 24,
+          "issueType": "weak"
+        },
+        {
+          "round": 6,
+          "statedNo": 24,
+          "issueType": "leak"
+        },
+        {
+          "round": 7,
+          "statedNo": 24,
+          "issueType": "stem"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 5
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 19
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 20
+        },
+        "v7": {
+          "file": "設計選擇題.pdf",
+          "page": 22
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match",
+        "v7": "unconfirmed-adoption"
+      }
+    },
+    {
+      "originalQuestionId": 21,
+      "revisedQuestionId": 8,
+      "topic": "外帶減量",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 21,
+          "stem": "小華一家人準備外帶晚餐。下列哪一種做法最能減少一次性垃圾？",
+          "options": [
+            "每次外帶都多拿幾雙免洗筷",
+            "自備可以重複使用的餐盒和餐具",
+            "請店家將每份餐點都裝進不同塑膠袋",
+            "每次用完餐具後就直接丟棄"
+          ],
+          "answer": "B"
+        },
+        "v6": {
+          "no": 8,
+          "stem": "小華一家人準備外帶晚餐。下列哪一種做法最能從源頭減少一次性廢棄物？",
+          "options": [
+            "使用店家提供的免洗餐具，用完後再分類回收",
+            "請店家改用紙製免洗餐具，用完後再丟棄",
+            "每次外帶都購買新的塑膠保鮮盒，用完後再回收",
+            "自備家中可以重複使用的餐盒和餐具"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "加入每次買新保鮮盒的選項，看學生懂不懂重複使用，後來改考從源頭減少垃圾。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 21,
+          "issueType": "weak"
+        },
+        {
+          "round": 4,
+          "statedNo": 21,
+          "issueType": "dup"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 5
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 21
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 22,
+      "revisedQuestionId": 22,
+      "topic": "購物袋重複使用",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 22,
+          "stem": "小明家中已經有幾個完整、還能繼續使用的購物袋。下次去市場買東西時，哪一種做法最符合減少資源浪費的原則？",
+          "options": [
+            "每次購物都購買新的棉布袋",
+            "先丟掉舊袋子，再購買環保袋",
+            "將家中現有的購物袋重複使用",
+            "多拿一些塑膠袋，使用一次就丟掉"
+          ],
+          "answer": "C"
+        },
+        "v6": {
+          "no": 22,
+          "stem": "小明買了一瓶可以直接飲用的牛奶。店員詢問他是否需要吸管，如果他想在方便飲用的同時，盡量減少額外的資源消耗，哪一種做法最適當？",
+          "options": [
+            "領取塑膠吸管，使用後做好垃圾分類",
+            "改用紙吸管，使用後丟入垃圾桶",
+            "直接飲用，不另外使用吸管",
+            "為了這次喝牛奶，另外購買一支新的不鏽鋼吸管"
+          ],
+          "answer": "C"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": false
+      },
+      "revisionReason": "跟外帶那題重複，改成要不要拿吸管。",
+      "teacherFeedback": [
+        {
+          "round": 4,
+          "statedNo": 22,
+          "issueType": "dup"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 5
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 18
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 22
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 23,
+      "revisedQuestionId": 14,
+      "topic": "桌罩",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 23,
+          "stem": "小玲參觀傳統器物展覽時，看到一種竹編器物，可以罩在桌上的食物外面，避免蒼蠅、蟑螂接觸食物。她看到的是什麼？",
+          "options": [
+            "背簍",
+            "斗笠",
+            "蒸籠",
+            "桌罩"
+          ],
+          "answer": "D"
+        },
+        "v6": {
+          "no": 14,
+          "stem": "小玲參觀傳統器物展覽時，看到一種竹編器物。早期居民會將它放在煮好的飯菜上方，避免蒼蠅、蟑螂接觸食物。小玲看到的是什麼？",
+          "options": [
+            "背簍",
+            "斗笠",
+            "蒸籠",
+            "桌罩"
+          ],
+          "answer": "D"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "罩在桌上直接對到桌罩，看字就能猜，改成放在飯菜上方。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 23,
+          "issueType": "leak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 6
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 17
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 23
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 24,
+      "revisedQuestionId": 21,
+      "topic": "資料蒐集",
+      "latestVersion": "v6",
+      "changeType": "revised",
+      "versions": {
+        "v1": {
+          "no": 24,
+          "stem": "小安想研究阿公收藏的傳統生活器物，卻不知道它的製作材料和用途。下列哪一種蒐集資料的方式最適當？",
+          "options": [
+            "查閱相關書籍，並向家人請教",
+            "只看外觀，就直接認定它的用途",
+            "將同學的猜測直接當作正確資料",
+            "不蒐集資料，直接寫下研究結論"
+          ],
+          "answer": "A"
+        },
+        "v6": {
+          "no": 21,
+          "stem": "小安想研究阿公收藏的一件傳統生活器物，了解它的製作材料和過去的用途。下列哪一種資料蒐集方式，最能幫助他獲得有依據的研究結果？",
+          "options": [
+            "查閱介紹相關傳統器物的書籍，並請教有使用經驗的長輩",
+            "請同學觀察器物照片，將最多人猜測的材料和用途當作答案",
+            "查詢網路商店中外形相似的現代商品，直接套用商品介紹",
+            "仔細觀察器物的顏色和形狀，再依照自己的想法推測用途"
+          ],
+          "answer": "A"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": false,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "錯誤選項太明顯，改成都有在找資料，但來源可不可靠不一樣。",
+      "teacherFeedback": [
+        {
+          "round": 2,
+          "statedNo": 24,
+          "issueType": "weak"
+        },
+        {
+          "round": 3,
+          "statedNo": 24,
+          "issueType": "weak"
+        }
+      ],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 6
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 18
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 24
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    },
+    {
+      "originalQuestionId": 25,
+      "revisedQuestionId": 7,
+      "topic": "階層圖",
+      "latestVersion": "v6",
+      "changeType": "unchanged",
+      "versions": {
+        "v1": {
+          "no": 25,
+          "stem": "小美研究傳統背簍，想用階層圖整理蒐集到的資料。依照課本的示範，她應該優先將資料分成哪兩個主要面向？",
+          "options": [
+            "價格、品牌",
+            "材質、用途",
+            "顏色、年代",
+            "重量、流行程度"
+          ],
+          "answer": "B"
+        },
+        "v6": {
+          "no": 7,
+          "stem": "小美研究傳統背簍，想用階層圖整理蒐集到的資料。依照課本的示範，她應該優先將資料分成哪兩個主要面向？",
+          "options": [
+            "價格、品牌",
+            "材質、用途",
+            "顏色、年代",
+            "重量、流行程度"
+          ],
+          "answer": "B"
+        }
+      },
+      "qualityIndicators": {
+        "grammar": true,
+        "distractor": true,
+        "answerCorrect": true,
+        "objective": true
+      },
+      "revisionReason": "",
+      "teacherFeedback": [],
+      "source": {
+        "v1": {
+          "file": "設計選擇題.pdf",
+          "page": 6
+        },
+        "v6": {
+          "file": "設計選擇題.pdf",
+          "page": 16
+        },
+        "analysis": {
+          "file": "題目分析表.docx",
+          "row": 25
+        }
+      },
+      "verificationStatus": {
+        "v1": "match",
+        "v6": "match"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "type": "題幹洩題",
+      "title": "「背簍」與「背回家」字面直接對應",
+      "originalQuestionIds": [
+        8
+      ],
+      "principle": "把題幹的關鍵字圈起來，逐一檢查正確選項裡有沒有出現同一個字。有的話，改用意思相同但字面不同的說法，例如「背回家」改成「搬運」。",
+      "revisedQuestionIds": [
+        11
+      ],
+      "rounds": [
+        2
+      ],
+      "hasV7": false,
+      "props": [
+        "backBasket"
+      ]
+    },
+    {
+      "id": "02",
+      "type": "誘答選項品質",
+      "title": "荒謬誘答逐步修訂後，又產生 A＋B＝D 的組合線索",
+      "originalQuestionIds": [
+        11
+      ],
+      "principle": "改完誘答選項後，要把四個選項放在一起重看一次：正確答案不能剛好是其他選項的組合，也不能特別長、特別完整。",
+      "note": "這題在第二輪沒有被點名，是第五輪才開始反覆修改。",
+      "revisedQuestionIds": [
+        18
+      ],
+      "rounds": [
+        5,
+        6,
+        7
+      ],
+      "hasV7": true,
+      "props": [
+        "stove"
+      ]
+    },
+    {
+      "id": "03",
+      "type": "跨題互相提示",
+      "title": "三題重複涉及魚筌，後題可能揭露前題答案",
+      "originalQuestionIds": [
+        2,
+        3,
+        4
+      ],
+      "principle": "整份試卷要一起審，不能只看單題。先列出每一題的考點，同一個器物盡量只考一次，避免後面的題目透露前面的答案。",
+      "revisedQuestionIds": [
+        2,
+        25,
+        15
+      ],
+      "rounds": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "hasV7": false,
+      "props": [
+        "fishTrap",
+        "bambooHat",
+        "bucket"
+      ]
+    },
+    {
+      "id": "04",
+      "type": "雙重答案爭議",
+      "title": "竹葉之外，其他植物葉片也可能用來包粽子",
+      "originalQuestionIds": [
+        14
+      ],
+      "principle": "替每個錯誤選項找反例：如果它在真實生活中也成立，就要修改題幹，把條件限定到只剩一個最佳答案。",
+      "aiNote": "另外，第14題改為比較不同族群運用植物葉片的方式，避免將其他實際也能包粽子的植物葉片誤列為錯誤答案。",
+      "note": "教師在第二輪建議用「其他植物的葉子包粽子」當誘答，是 AI 在修訂說明中指出這樣會變成雙重答案。",
+      "revisedQuestionIds": [
+        23
+      ],
+      "rounds": [
+        2,
+        4
+      ],
+      "hasV7": false,
+      "props": [
+        "leaf"
+      ]
+    },
+    {
+      "id": "05",
+      "type": "從記憶走向應用",
+      "title": "由背誦塑膠特性改為餐飲店採購需求分析",
+      "originalQuestionIds": [
+        17
+      ],
+      "principle": "把「為什麼」改成「在這個情境下該怎麼選」：給學生具體的條件，讓他運用概念做判斷，而不是背出課文的句子。",
+      "revisedQuestionIds": [
+        16
+      ],
+      "rounds": [
+        2,
+        6,
+        7
+      ],
+      "hasV7": true,
+      "props": [
+        "takeout"
+      ]
+    },
+    {
+      "id": "06",
+      "type": "證據與推論",
+      "title": "由判斷塑膠危害改為選擇可提供直接證據的調查方法",
+      "originalQuestionIds": [
+        20
+      ],
+      "principle": "證據題的四個選項都要看起來合理，差別在證據和結論之間的距離：哪一個是直接證據，哪一個只是相關的環境資訊。",
+      "revisedQuestionIds": [
+        24
+      ],
+      "rounds": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hasV7": true,
+      "props": [
+        "turtle"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "fishTrap",
+      "name": "魚筌",
+      "group": "traditional",
+      "keywords": [
+        "魚筌",
+        "漏斗形"
+      ],
+      "desc": "竹子和藤編成的漏斗形器物，放進溪流捕魚蝦。",
+      "occurrences": [
+        {
+          "originalQuestionId": 2,
+          "version": "v1",
+          "no": 2,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 3,
+          "version": "v1",
+          "no": 3,
+          "inStem": true,
+          "inOptions": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 3,
+          "version": "v6",
+          "no": 25,
+          "inStem": true,
+          "inOptions": [
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 4,
+          "version": "v1",
+          "no": 4,
+          "inStem": true,
+          "inOptions": [
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backBasket",
+      "name": "背簍",
+      "group": "traditional",
+      "keywords": [
+        "背簍"
+      ],
+      "desc": "藤條編成，用來背負、搬運農作物和工具。",
+      "occurrences": [
+        {
+          "originalQuestionId": 5,
+          "version": "v1",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 5,
+          "version": "v6",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 8,
+          "version": "v1",
+          "no": 8,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 8,
+          "version": "v6",
+          "no": 11,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 23,
+          "version": "v1",
+          "no": 23,
+          "inStem": false,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 23,
+          "version": "v6",
+          "no": 14,
+          "inStem": false,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 25,
+          "version": "v1",
+          "no": 25,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 25,
+          "version": "v6",
+          "no": 7,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "mortar",
+      "name": "木杵與石臼",
+      "group": "traditional",
+      "keywords": [
+        "木杵",
+        "石臼",
+        "敲擊石板"
+      ],
+      "desc": "把小米放進石臼用木杵搗製；邵族也用長短不同的木杵敲擊石板發出節奏。",
+      "occurrences": [
+        {
+          "originalQuestionId": 5,
+          "version": "v1",
+          "no": 5,
+          "inStem": true,
+          "inOptions": [
+            "B"
+          ]
+        },
+        {
+          "originalQuestionId": 5,
+          "version": "v6",
+          "no": 5,
+          "inStem": true,
+          "inOptions": [
+            "B"
+          ]
+        },
+        {
+          "originalQuestionId": 6,
+          "version": "v1",
+          "no": 6,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 6,
+          "version": "v6",
+          "no": 20,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "bambooHat",
+      "name": "斗笠",
+      "group": "traditional",
+      "keywords": [
+        "斗笠",
+        "戴上一種"
+      ],
+      "desc": "用竹片、油紙或植物葉片製成，田間工作時遮陽擋雨。",
+      "occurrences": [
+        {
+          "originalQuestionId": 2,
+          "version": "v6",
+          "no": 2,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 5,
+          "version": "v1",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 5,
+          "version": "v6",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 23,
+          "version": "v1",
+          "no": 23,
+          "inStem": false,
+          "inOptions": [
+            "B"
+          ]
+        },
+        {
+          "originalQuestionId": 23,
+          "version": "v6",
+          "no": 14,
+          "inStem": false,
+          "inOptions": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabinet",
+      "name": "菜櫥",
+      "group": "traditional",
+      "keywords": [
+        "菜櫥"
+      ],
+      "desc": "木製櫥櫃，在冰箱普及以前用來放置食物、減少昆蟲接觸。",
+      "occurrences": [
+        {
+          "originalQuestionId": 5,
+          "version": "v1",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 5,
+          "version": "v6",
+          "no": 5,
+          "inStem": false,
+          "inOptions": [
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 12,
+          "version": "v1",
+          "no": 12,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 12,
+          "version": "v6",
+          "no": 3,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "stove",
+      "name": "土灶",
+      "group": "traditional",
+      "keywords": [
+        "灶",
+        "灰燼"
+      ],
+      "desc": "用泥土與磚塊砌成、燒木柴煮食的傳統灶具。",
+      "occurrences": [
+        {
+          "originalQuestionId": 9,
+          "version": "v1",
+          "no": 9,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 9,
+          "version": "v6",
+          "no": 9,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 9,
+          "version": "v7",
+          "no": 9,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 10,
+          "version": "v1",
+          "no": 10,
+          "inStem": true,
+          "inOptions": [
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 10,
+          "version": "v6",
+          "no": 10,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 11,
+          "version": "v1",
+          "no": 11,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 11,
+          "version": "v6",
+          "no": 18,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "B",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 11,
+          "version": "v7",
+          "no": 18,
+          "inStem": true,
+          "inOptions": [
+            "B",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cover",
+      "name": "桌罩",
+      "group": "traditional",
+      "keywords": [
+        "桌罩",
+        "罩在"
+      ],
+      "desc": "竹編器物，蓋在飯菜上方避免蒼蠅、蟑螂接觸食物。",
+      "occurrences": [
+        {
+          "originalQuestionId": 23,
+          "version": "v1",
+          "no": 23,
+          "inStem": true,
+          "inOptions": [
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 23,
+          "version": "v6",
+          "no": 14,
+          "inStem": false,
+          "inOptions": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gourd",
+      "name": "瓠瓢",
+      "group": "traditional",
+      "keywords": [
+        "瓠瓢"
+      ],
+      "desc": "早期居民用來舀水的器物，現代常改用塑膠水勺。",
+      "occurrences": [
+        {
+          "originalQuestionId": 15,
+          "version": "v1",
+          "no": 15,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 15,
+          "version": "v6",
+          "no": 6,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "board",
+      "name": "砧板",
+      "group": "traditional",
+      "keywords": [
+        "砧板"
+      ],
+      "desc": "傳統木製砧板，切菜、切肉時當墊板。",
+      "occurrences": [
+        {
+          "originalQuestionId": 13,
+          "version": "v1",
+          "no": 13,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 13,
+          "version": "v6",
+          "no": 13,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "bucket",
+      "name": "木水桶",
+      "group": "traditional",
+      "keywords": [
+        "水桶",
+        "木桶"
+      ],
+      "desc": "挑選堅硬耐用、不易腐爛的木材製成，反覆盛裝與搬運水。",
+      "occurrences": [
+        {
+          "originalQuestionId": 4,
+          "version": "v6",
+          "no": 15,
+          "inStem": true,
+          "inOptions": [
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 11,
+          "version": "v1",
+          "no": 11,
+          "inStem": false,
+          "inOptions": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leaf",
+      "name": "月桃葉與竹葉",
+      "group": "traditional",
+      "keywords": [
+        "月桃",
+        "竹葉",
+        "粽"
+      ],
+      "desc": "寬大不易破的植物葉片，用來包裹糯米等食材。",
+      "occurrences": [
+        {
+          "originalQuestionId": 7,
+          "version": "v1",
+          "no": 7,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 7,
+          "version": "v6",
+          "no": 12,
+          "inStem": true,
+          "inOptions": [
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 14,
+          "version": "v1",
+          "no": 14,
+          "inStem": true,
+          "inOptions": [
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 14,
+          "version": "v6",
+          "no": 23,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 16,
+          "version": "v1",
+          "no": 16,
+          "inStem": false,
+          "inOptions": [
+            "B",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ladle",
+      "name": "塑膠水勺",
+      "group": "modern",
+      "keywords": [
+        "塑膠水勺"
+      ],
+      "desc": "取代瓠瓢的現代器物：材質改變，用途相近。",
+      "occurrences": [
+        {
+          "originalQuestionId": 15,
+          "version": "v1",
+          "no": 15,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 15,
+          "version": "v6",
+          "no": 6,
+          "inStem": true,
+          "inOptions": []
+        }
+      ]
+    },
+    {
+      "id": "bottle",
+      "name": "寶特瓶",
+      "group": "modern",
+      "keywords": [
+        "寶特瓶"
+      ],
+      "desc": "淨灘統計中數量最多的海洋廢棄物。",
+      "occurrences": [
+        {
+          "originalQuestionId": 18,
+          "version": "v1",
+          "no": 18,
+          "inStem": true,
+          "inOptions": [
+            "B"
+          ]
+        },
+        {
+          "originalQuestionId": 18,
+          "version": "v6",
+          "no": 17,
+          "inStem": true,
+          "inOptions": [
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cup",
+      "name": "塑膠杯與吸管",
+      "group": "modern",
+      "keywords": [
+        "塑膠杯",
+        "吸管"
+      ],
+      "desc": "一次性塑膠用品，不易自然分解、容易持續累積。",
+      "occurrences": [
+        {
+          "originalQuestionId": 18,
+          "version": "v1",
+          "no": 18,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 18,
+          "version": "v6",
+          "no": 17,
+          "inStem": true,
+          "inOptions": []
+        },
+        {
+          "originalQuestionId": 19,
+          "version": "v1",
+          "no": 19,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 19,
+          "version": "v6",
+          "no": 19,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 22,
+          "version": "v6",
+          "no": 22,
+          "inStem": true,
+          "inOptions": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bag",
+      "name": "購物袋與餐盒",
+      "group": "modern",
+      "keywords": [
+        "購物袋",
+        "餐盒",
+        "保鮮盒",
+        "塑膠袋"
+      ],
+      "desc": "重複使用與源頭減量的生活選擇。",
+      "occurrences": [
+        {
+          "originalQuestionId": 18,
+          "version": "v1",
+          "no": 18,
+          "inStem": true,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 18,
+          "version": "v6",
+          "no": 17,
+          "inStem": true,
+          "inOptions": [
+            "A"
+          ]
+        },
+        {
+          "originalQuestionId": 21,
+          "version": "v1",
+          "no": 21,
+          "inStem": false,
+          "inOptions": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "originalQuestionId": 21,
+          "version": "v6",
+          "no": 8,
+          "inStem": false,
+          "inOptions": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "originalQuestionId": 22,
+          "version": "v1",
+          "no": 22,
+          "inStem": true,
+          "inOptions": [
+            "C",
+            "D"
+          ]
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "key": "tower",
+      "n": 1,
+      "name": "命題時光塔",
+      "en": "Authoring Timeline",
+      "label": "七輪人機對話，記錄 AI 初稿與教師回饋的命題歷程。",
+      "intro": "從第一次請 AI 出題，到第七輪局部修訂。每一輪都依「教師檢視 → 發現問題 → AI 修訂 → 教師再檢視」展開。",
+      "insight": "AI 產出不是終點，審題與回饋才是改善命題品質的關鍵。"
+    },
+    {
+      "key": "diag",
+      "n": 2,
+      "name": "試題診斷塔",
+      "en": "Item Diagnosis",
+      "label": "透過四項品質指標，檢視 25 道試題的命題品質。",
+      "intro": "教師用題目語法、誘答性、答案正確、切合學習目標四項指標，逐題檢核 AI 產出的初版 25 題。",
+      "insight": "答案正確，不代表試題品質良好。"
+    },
+    {
+      "key": "forge",
+      "n": 3,
+      "name": "修題鍛造坊",
+      "en": "Revision Forge",
+      "label": "探索六個代表案例，理解教師如何判斷與修訂試題。",
+      "intro": "六個代表案例，各自對應一種命題問題。先自己判斷，再看教師提出的修改要求、AI 的改寫與教師最後的選用。",
+      "insight": "好的試題需要兼顧誘答品質、答案唯一性及教學目標。"
+    },
+    {
+      "key": "museum",
+      "n": 4,
+      "name": "器物展覽館",
+      "en": "Artifact Gallery",
+      "label": "題目考過的 15 件器物，看它們在修訂中如何被取捨。",
+      "intro": "題目裡提到的傳統與現代器物。同一件器物被考幾次、出現在題幹還是選項，都會影響學生能不能從字面猜到答案。",
+      "insight": "同一個考點重複出現，後面的題目就可能替前面的題目洩題。"
+    }
+  ],
+  "curation": {
+    "tagline": "從 AI 初稿到教師專業判斷，探索一場持續修訂與精進的命題旅程。",
+    "conclusion": "AI 可以協助生成與修改試題，但命題品質的判斷、教學適切性的檢核，以及最終選用，仍需要教師的專業決策。",
+    "source": "策展觀點：引自命題歷程規劃與網站優化需求，不是對話紀錄原文。"
+  },
+  "discrepancies": [
+    {
+      "where": "第六版第 16 題（初版第 17 題）",
+      "field": "題幹",
+      "sheet": "據課本的介紹，塑膠器物逐漸取代部分傳統竹製、木製器物。下列哪一項是課本特別強調的主要原因？",
+      "pdf": "根據課本的介紹，塑膠器物逐漸取代部分傳統竹製、木製器物。下列哪一項是課本特別強調的主要原因？"
+    }
+  ]
+}

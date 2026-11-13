@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 協作命題知識島</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app"></div>
+<div id="overlay"><svg id="leaders"></svg></div>
+<div id="tip" hidden></div>
+<div id="bubble" role="status" aria-live="polite" hidden></div>
+
+<header class="brand">
+  <h1><span>AI 協作命題</span>知識島</h1>
+  <p class="sub">四上社會〈器物與生活〉｜25 題・七輪對話・六個代表案例</p>
+  <p class="tagline"></p>
+</header>
+
+<nav class="tools" aria-label="操作">
+  <button id="overview" type="button">回到全景</button>
+  <button id="pause" type="button">暫停動畫</button>
+  <button id="resetView" type="button">重設視角</button>
+  <button id="tourBtn" type="button">導覽模式</button>
+  <button id="help" type="button" aria-expanded="false" aria-controls="helpPop">操作說明</button>
+  <div id="helpPop" class="help-pop" hidden>
+    <p id="helpText"></p>
+    <ul>
+      <li><b>回到全景</b>：關閉面板，鏡頭退回整座島</li>
+      <li><b>重設視角</b>：連旋轉角度一起轉回初始方向</li>
+      <li><b>導覽模式</b>：依序走過四站，最後看結語</li>
+    </ul>
+    <p class="small">面板裡的證據標示</p>
+    <div class="legend">
+      <span class="ev-teacher">教師原話</span><span class="ev-ai">AI 原文</span><span class="ev-derived">整理歸納</span><span class="ev-curator">策展觀點</span>
+    </div>
+  </div>
+</nav>
+<div class="hint"></div>
+<section id="tour" aria-live="polite" hidden></section>
+
+<aside id="drawer" aria-hidden="true" aria-label="內容面板">
+  <header>
+    <div class="head"></div>
+    <button type="button" class="close" data-act="close" aria-label="關閉面板，返回全景">✕</button>
+  </header>
+  <nav class="stations" aria-label="展區"></nav>
+  <div class="body"></div>
+  <footer class="foot"></footer>
+</aside>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

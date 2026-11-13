@@ -1,0 +1,12 @@
+# 套件與建置產物
+node_modules/
+dist/
+__pycache__/
+
+# 原始資料不公開（對話紀錄 PDF、題目分析表）
+*.pdf
+*.docx
+
+# 本機設定
+.claude/
+desktop.ini
